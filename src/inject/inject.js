@@ -19,7 +19,7 @@ $(function() {
 
 	var sweat = function() {
 
-		console.log('super hype enabled');
+		console.log('Hyper Sweat Enabled');
 
 		var parts = window.location.pathname.split('/');
 
@@ -56,12 +56,13 @@ $(function() {
 
 				setTimeout(function(){
 
-					console.log('redirect')
 					window.location = "http://bit.ly/1h2tq77";
 
 				}, 200);
 
 			});
+
+			$('#cart-controls').append('<div style="color: #db0000; font-size: 12px;">!!! Hyper Sweat Enabled</div>');
 
 		}
 
