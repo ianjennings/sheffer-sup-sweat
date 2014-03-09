@@ -62,7 +62,7 @@ $(function() {
 
 			});
 
-			$('#cart-controls').append('<div style="color: #db0000; font-size: 12px;">!!! Hyper Sweat Enabled</div>');
+			$('#cart-controls').append('<div style="color: #db0000; font-size: 12px;">Hyper Sweat Enabled</div>');
 
 		}
 
@@ -73,13 +73,14 @@ $(function() {
 
     if(location.href != oldLocation) {
 
-      oldLocation = location.href
-
-      sweat();
+      if($('#cart-controls').length) {
+	    	oldLocation = location.href
+	      sweat();
+      }
 
     }
 
-  }, 1000); // check every second
+  }, 300); // check every second
 
  	sweat();
 
